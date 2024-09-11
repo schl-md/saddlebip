@@ -24,6 +24,9 @@
 *.class
 *.jar
 
+<<<<<<< HEAD
 # Build system stuff.
 .mvn/
 target/
+=======
+>>>>>>> 7511479 (Initial commit.)
