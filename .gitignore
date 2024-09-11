@@ -19,18 +19,25 @@
 # along with this program; see the file COPYING.  If not, see
 # <https://www.gnu.org/licenses/>.
 
+# ----- Build artifacts -----
 
 # Java stuff.
 *.class
 *.jar
-<<<<<<< HEAD
 
-<<<<<<< HEAD
 # Build system stuff.
 .mvn/
 target/
-=======
->>>>>>> 7511479 (Initial commit.)
-=======
-target/
->>>>>>> a45f619 (Configure Maven.)
+
+
+# ----- Dev artifacts -----
+
+# GNU Nano & vim et al.
+*.swp
+
+# Emacs
+*~
+\#*\#
+
+# VSCode
+.vscode
