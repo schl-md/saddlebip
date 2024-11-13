@@ -7,7 +7,7 @@ import gnu.gettext.GettextResource;
  */
 public class App {
     public static void main(String[] args) {
-        java.util.ResourceBundle catalog = java.util.ResourceBundle.getBundle("test");
+        java.util.ResourceBundle catalog = java.util.ResourceBundle.getBundle("saddlebip_en-US");
         System.out.println(GettextResource.gettext(catalog, "Hello, world!"));
     }
 }
