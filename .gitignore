@@ -28,6 +28,7 @@
 # Build system stuff.
 .mvn/
 target/
+dependency-reduced-pom.xml
 
 
 # ----- Dev artifacts -----
