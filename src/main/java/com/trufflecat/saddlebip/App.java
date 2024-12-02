@@ -1,13 +1,17 @@
 package com.trufflecat.saddlebip;
 
-import gnu.gettext.GettextResource;
+import com.trufflecat.saddlebip.client.Client;
+import com.trufflecat.saddlebip.shared.Arguments;
+
 
 /**
  * Hello world!
  */
 public class App {
     public static void main(String[] args) {
-        java.util.ResourceBundle catalog = java.util.ResourceBundle.getBundle("saddlebip_en-US");
-        System.out.println(GettextResource.gettext(catalog, "Hello, world!"));
+        Arguments arguments = new Arguments(args);
+        arguments.parseArguments();
+        Client client = new Client();
+        client.clientMain();
     }
 }

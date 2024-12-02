@@ -30,18 +30,15 @@
 
 
   <dependencies>
-    <!-- never got the package to work,
-         had to locally clone it. -->
+
+    <!-- For i18n and l10n. -->
     <dependency>
       <groupId>org.gnu.gettext</groupId>
       <artifactId>libintl</artifactId>
       <version>0.18.3</version>
     </dependency>
-    <!-- -->
 
-    <!--
-    So that I can run gettext stuff at compile time.
-    -->
+    <!-- So that I can run gettext stuff at compile time. -->
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>exec-maven-plugin</artifactId>
@@ -49,9 +46,7 @@
       <scope>compile</scope>
     </dependency>
 
-    <!--
-    So that saddlebip can interface with native libraries.
-    -->
+    <!-- So that saddlebip can interface with native libraries. -->
     <dependency>
       <groupId>net.java.dev.jna</groupId>
       <artifactId>jna</artifactId>
@@ -143,7 +138,7 @@
           </execution>
         </executions>
       </plugin>
-      
+      <!-- Now the JARs work! -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
