@@ -1,17 +1,14 @@
 package com.trufflecat.saddlebip;
 
 import com.trufflecat.saddlebip.client.Client;
-import com.trufflecat.saddlebip.shared.Arguments;
+import com.trufflecat.saddlebip.shared.CommandLineArguments;
 
-
-/**
- * Hello world!
- */
 public class App {
     public static void main(String[] args) {
-        Arguments arguments = new Arguments(args);
-        arguments.parseArguments();
+        CommandLineArguments clargs = new CommandLineArguments(args);
+        clargs.parseArguments();
+
         Client client = new Client();
-        client.clientMain();
+        client.clientMain(clargs);
     }
 }
